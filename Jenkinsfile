@@ -9,7 +9,7 @@ pipeline {
     stage('Unit Tests') {
       steps {
         sh '''pip install pytest
-/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest'''
+/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .'''
       }
     }
 
