@@ -8,8 +8,10 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''pip3 install pytest
+        sh '''pwd
+pip3 install pytest
 pytest
+
 '''
       }
     }
