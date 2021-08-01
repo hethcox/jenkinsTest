@@ -10,7 +10,7 @@ pipeline {
       steps {
         sh '''pip install pytest
 ls -R .
-/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .
+/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest /var/jenkins_home/workspace/jenkinsTest_main
 
 '''
       }
