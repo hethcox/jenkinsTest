@@ -8,8 +8,7 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''whoami
-pwd
+        sh '''pwd
 pip install pytest
 pytest
 
