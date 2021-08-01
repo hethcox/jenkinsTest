@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''echo $PATH+EXTRA
+        sh '''whoami
 pip install -r requirements.txt
 pytest
 
