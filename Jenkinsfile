@@ -8,8 +8,8 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''echo $PATH
-pip3 install pytest
+        sh '''echo $PATH+EXTRA
+pip install -r requirements.txt
 pytest
 
 '''
