@@ -8,9 +8,8 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''pwd
-pip install pytest
-ls -R /var/jenkins_home/workspace/jenkinsTest_main/.local/bin/
+        sh '''pip install pytest
+ls -R .
 /var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest
 
 '''
