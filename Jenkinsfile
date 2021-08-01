@@ -8,8 +8,12 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''pip install pytest
-/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .'''
+        sh '''ls
+conda env create -f environment.yml
+#pip install pytest
+/var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .
+
+conda run -n docker_env /bin/bash -c'''
       }
     }
 
