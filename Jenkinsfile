@@ -15,4 +15,7 @@ pytest
     }
 
   }
+  environment {
+    HOME = '/tmp'
+  }
 }
