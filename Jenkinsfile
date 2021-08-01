@@ -8,7 +8,7 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''pwd
+        sh '''echo $PATH
 pip3 install pytest
 pytest
 
