@@ -9,7 +9,8 @@ pipeline {
     stage('Unit Tests') {
       steps {
         sh '''whoami
-pip install -r requirements.txt
+pwd
+pip install pytest
 pytest
 
 '''
