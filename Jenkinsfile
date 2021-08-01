@@ -18,6 +18,6 @@ pytest
 
   }
   environment {
-    HOME = '/root'
+    HOME = '/var/jenkins_home/workspace/jenkinsTest_main'
   }
 }
