@@ -1,5 +1,10 @@
 pipeline {
-  agent any
+  agent {
+    docker {
+      image 'continuumio/miniconda3'
+    }
+
+  }
   stages {
     stage('Unit Tests') {
       steps {
