@@ -3,7 +3,9 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''pytest
+        sh '''ls
+pip3 install pytest
+pytest
 '''
       }
     }
