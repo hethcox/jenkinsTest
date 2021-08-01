@@ -19,6 +19,5 @@ pytest
   }
   environment {
     HOME = '/var/jenkins_home/workspace/jenkinsTest_main'
-    PATH = '$PATH:/var/jenkins_home/workspace/jenkinsTest_main/.local/bin'
   }
 }
