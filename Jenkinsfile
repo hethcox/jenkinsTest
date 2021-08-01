@@ -16,6 +16,6 @@ pipeline {
   }
   environment {
     HOME = '/var/jenkins_home/workspace/jenkinsTest_main'
-    PYTHON_PATH = '/Users/jhethcox/Development/JenkinsTest'
+    PYTHON_PATH = '/var/jenkins_home/workspace/jenkinsTest_main'
   }
 }
