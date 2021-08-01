@@ -9,7 +9,7 @@ pipeline {
     stage('Unit Tests') {
       steps {
         sh '''ls
-pip3 install pytest
+sudo pip3 install pytest
 pytest
 '''
       }
