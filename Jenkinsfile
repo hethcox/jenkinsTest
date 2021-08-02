@@ -8,7 +8,8 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''conda env create -f environment.yml
+        sh '''unset SUDO_UID SUDO_GID SUDO_USER 
+conda env create -f environment.yml
 #pip install pytest
 /var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .
 
