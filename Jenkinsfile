@@ -8,13 +8,11 @@ pipeline {
   stages {
     stage('Unit Tests') {
       steps {
-        sh '''unset SUDO_UID SUDO_GID SUDO_USER 
-cd /app
-conda env create -f environment.yml
-#pip install pytest
+        sh '''#conda env create -f environment.yml
+pip install pytest
 /var/jenkins_home/workspace/jenkinsTest_main/.local/bin/pytest .
 
-conda run -n docker_env /bin/bash -c'''
+#conda run -n docker_env /bin/bash -c'''
       }
     }
 
