@@ -1,6 +1,8 @@
-FROM node:14-alpine
+#FROM node:14-alpine
+FROM docker:dind
 
-RUN npm i
+#RUN npm i
 
+CMD [ "tail", "-f", "/dev/null"]
 
 
