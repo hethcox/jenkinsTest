@@ -2,9 +2,9 @@ node {
 //   agent { dockerfile true }
 //   stages {
     stage('Test') {
-      steps {
+//       steps {
         sh 'echo "Tests passed"'
-      }
+//       }
     }
 //   }
 }
