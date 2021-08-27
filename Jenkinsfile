@@ -3,9 +3,7 @@ node {
   stages {
     stage('Test') {
       steps {
-        app.inside {
-            sh 'echo "Tests passed"'
-        }
+        sh 'echo "Tests passed"'
       }
     }
   }
