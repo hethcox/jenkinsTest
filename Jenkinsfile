@@ -3,7 +3,7 @@ node {
 //   stages {
     stage('Test') {
 //       steps {
-        sh 'echo "Tests passed"'
+        npm run test
 //       }
     }
 //   }
