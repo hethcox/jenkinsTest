@@ -1,9 +1,11 @@
-pipeline {
+node {
   agent { dockerfile true }
   stages {
     stage('Test') {
       steps {
-        sh 'echo Hi there'
+        app.inside {
+            sh 'echo "Tests passed"'
+        }
       }
     }
   }
